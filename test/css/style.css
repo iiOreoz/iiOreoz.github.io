@@ -1,173 +1,103 @@
-
-
-body{
-  margin: 0px;
-  padding: 0px;
-  background: #1abc9d;
+body {
+    min-height:100%;
+    background-color: #263238;
 }
 
-h1{
-  color: #fff;
+.text-center{
   text-align: center;
-  font-family: Arial;
-  font-weight: normal;
-  margin: 2em auto 0px;
-}
-.outer-screen{
-  background: #13202c;
-  width: 900px;
-  height: 540px;
-  margin: 50px auto;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  position: relative;
-  padding-top: 35px;
 }
 
-.outer-screen:before{
-  content: "";
-  background: #3e4a53;
-  border-radius: 50px;
-  position: absolute;
-  bottom: 20px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  z-index: 9999;
-  width: 50px;
-  height: 50px;
-}
-.outer-screen:after{
-  content: "";
-  background: #ecf0f1;
-  width: 900px;
-  height: 88px;
-  position: absolute;
-  bottom: 0px;
-  border-radius: 0px 0px 20px 20px;
-  -moz-border-radius: 0px 0px 20px 20px;
-  -webkit-border-radius: 0px 0px 20px 20px;
+.space-bot{
+  margin-bottom: 35px;
 }
 
-.stand{
-  position: relative;  
+.space-top{
+  margin-top: 35px;
 }
 
-.stand:before{
-  content: "";
-  position: absolute;
-  bottom: -150px;
-  border-bottom: 150px solid #bdc3c7;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  width: 200px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
+/* Title */
+
+h1 {
+    color: white;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
 }
 
-.stand:after{
-  content: "";
-  position: absolute;
-  width: 260px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  border-bottom: 30px solid #bdc3c7;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  bottom: -180px;
-  box-shadow: 0px 4px 0px #7e7e7e
+/* Sign Up */
+
+.container {
+    max-width: 400px;
+    max-height: 100px;
+    margin-top: 10px;
 }
 
-.inner-screen{
-  width: 800px;
-  height: 340px;
-  background: #1abc9d;
-  margin: 0px auto;
-  padding-top: 80px;
+.alert-danger{
+	text-align: center;
 }
 
-.form{
-  width: 400px;
-  height: 230px;
-  background: #edeff1;
-  margin: 0px auto;
-  padding-top: 20px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+.signup-screen {
+	  padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+    background-color: #2c3940;
+    box-shadow: 0 1px 6px rgba(0,0,0,.3);
+    color: white;
 }
 
-input[type="text"]{
-  display: block;
-  width: 309px;
-  height: 35px;
-  margin: 15px auto;
-  background: #fff;
-  border: 0px;
-  padding: 5px;
-  font-size: 16px;
-   border: 2px solid #fff;
-  transition: all 0.3s ease;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+.btn{
+  border-radius: 2px;
 }
 
-input[type="text"]:focus{
-  border: 2px solid #1abc9d
+.cancel{
+  background-color: #df405a;
 }
 
-input[type="submit"]{
-  display: block;
-  background: #1abc9d;
-  width: 314px;
-  padding: 12px;
-  cursor: pointer;
-  color: #fff;
-  border: 0px;
-  margin: auto;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  font-size: 17px;
-  transition: all 0.3s ease;
+.done{
+  background-color: #5CAB7D;
 }
 
-input[type="submit"]:hover{
-  background: #09cca6
+.done:hover{
+  background-color: #6dc793;
 }
 
-a{
-  text-align: center;
-  font-family: Arial;
-  color: gray;
-  display: block;
-  margin: 15px auto;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  font-size: 12px;
+.done:focus{
+  background-color: #6dc793;
 }
 
-a:hover{
-  color: #1abc9d;
+.cancel:hover{
+  background-color: #f0435f;
 }
 
-
-::-webkit-input-placeholder {
-   color: gray;
+.cancel:focus{
+  background-color: #f0435f;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: gray;  
+.input-group {
+    width:100%;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: gray;  
+.input-group .ng-invalid {
+    border: 2px solid #e74c3c;
+    border-radius: 3px;
 }
 
-:-ms-input-placeholder {  
-   color: gray;  
+/* Error Box */
+
+.alert{
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  border-color: #e85a71;
+  background-color:  #e85a71;
+  color: white;
+  
+}
+
+.help-block {
+    font-size: 12px;
+    color: white
 }
