@@ -26,7 +26,7 @@
          </div>
            <form class="form-register" method="post" name="register" novalidate>
 	            <div class="input-field col s6">
-              <input id="PCNummer" type="text" class="validate" required>
+              <input id="PCNummer" type="number" ng-minlength='5' ng-maxlength='5' class="validate" required>
               <label for="PCNummer">PCNummer</label>
              </div>
              <div class="input-field col s6">
